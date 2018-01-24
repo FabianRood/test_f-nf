@@ -1,0 +1,52 @@
+<edmx:Edmx
+    xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+    xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+    xmlns:sap="http://www.sap.com/Protocols/SAPData" Version="1.0">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema
+            xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="ZTNM_CLAIM_V2_SRV" xml:lang="de" sap:schema-version="1">
+            
+             <EntityType Name="ReklamationList" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Guid"/>
+                </Key>
+                <Property Name="Guid" Type="Edm.Guid" Nullable="false" sap:label="GUID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Text" Type="Edm.String" Nullable="false" MaxLength="20" sap:label="Bezeichnung" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TypeText" Type="Edm.String" Nullable="false" MaxLength="20" sap:label="Bezeichnung" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+         
+            <Association Name="ClaimToClaimPartner" sap:content-version="1">
+                <End Type="ZTNM_CLAIM_V2_SRV.ClaimList" Multiplicity="1" Role="FromRole_ClaimToClaimPartner"/>
+                <End Type="ZTNM_CLAIM_V2_SRV.ClaimPartner" Multiplicity="*" Role="ToRole_ClaimToClaimPartner"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_ClaimToClaimPartner">
+                        <PropertyRef Name="Guid"/>
+                    </Principal>
+                    <Dependent Role="ToRole_ClaimToClaimPartner">
+                        <PropertyRef Name="HeadGuid"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+          
+            <EntityContainer Name="ZTNM_CLAIM_V2_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
+                <EntitySet Name="ReklamationSet" EntityType="ZTNM_CLAIM_V2_SRV.ReklamationList" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <AssociationSet Name="ClaimToClaimDetailSet" Association="ZTNM_CLAIM_V2_SRV.ClaimToClaimDetail" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="ClaimListSet" Role="FromRole_ClaimToClaimDetail"/>
+                    <End EntitySet="ClaimDetailSet" Role="ToRole_ClaimToClaimDetail"/>
+                </AssociationSet>
+                
+                <FunctionImport Name="checkNextStatus" ReturnType="ZTNM_CLAIM_V2_SRV.checkNextStatus" m:HttpMethod="GET">
+                    <Parameter Name="GUID" Type="Edm.Guid" Mode="In"/>
+                </FunctionImport>
+                
+                <FunctionImport Name="finishStep" ReturnType="ZTNM_CLAIM_V2_SRV.checkNextStatus" m:HttpMethod="GET">
+                    <Parameter Name="GUID" Type="Edm.Guid" Mode="In"/>
+                </FunctionImport>
+            </EntityContainer>
+            <atom:link
+                xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href="./sap/ZTNM_CLAIM_V2_SRV/$metadata"/>
+                <atom:link
+                    xmlns:atom="http://www.w3.org/2005/Atom" rel="latest-version" href="./sap/ZTNM_CLAIM_V2_SRV/$metadata"/>
+                </Schema>
+            </edmx:DataServices>
+        </edmx:Edmx>

@@ -1,0 +1,101 @@
+[{
+	"Guid": "45f788b2-7603-48b0-9bce-f3c8085e24f1",
+	"Text": "Text 1",
+	"Percent":"10",
+	"StateValue":"Success",
+	"TypeText": "TypeText 1",
+	"__metadata": {
+		"uri": "ReklamationSet(guid'45f788b2-7603-48b0-9bce-f3c8085e24f1')",
+		"type": "ZTNM_CLAIM_V2_SRV.ReklamationList"
+	}
+}, {
+	"Guid": "40dba7e9-bf7d-4ee1-918a-4e9b86a1e130",
+	"Text": "Text 2",
+	"TypeText": "TypeText 2",
+		"Percent":"10",
+	"StateValue":"Success",
+	"__metadata": {
+		"uri": "ReklamationSet(guid'40dba7e9-bf7d-4ee1-918a-4e9b86a1e130')",
+		"type": "ZTNM_CLAIM_V2_SRV.ReklamationList"
+	}
+}, {
+	"Guid": "7495f725-7d70-4a7a-88ff-fc48c870abb8",
+	"Text": "Text 3",
+		"Percent":"10",
+	"StateValue":"Success",
+	"TypeText": "TypeText 3",
+	"__metadata": {
+		"uri": "ReklamationSet(guid'7495f725-7d70-4a7a-88ff-fc48c870abb8')",
+		"type": "ZTNM_CLAIM_V2_SRV.ReklamationList"
+	}
+}, {
+	"Guid": "4d6283f7-0508-47d5-9bbe-7be8e6bb5bf9",
+	"Text": "Text 4",
+		"Percent":"10",
+	"StateValue":"Success",
+	"TypeText": "TypeText 4",
+	"__metadata": {
+		"uri": "ReklamationSet(guid'4d6283f7-0508-47d5-9bbe-7be8e6bb5bf9')",
+		"type": "ZTNM_CLAIM_V2_SRV.ReklamationList"
+	}
+}, {
+	"Guid": "550f16fd-dd03-4e0f-a4f5-2f48d54ab2aa",
+	"Text": "Text 5",
+		"Percent":"10",
+	"StateValue":"Success",
+	"TypeText": "TypeText 5",
+	"__metadata": {
+		"uri": "ReklamationSet(guid'550f16fd-dd03-4e0f-a4f5-2f48d54ab2aa')",
+		"type": "ZTNM_CLAIM_V2_SRV.ReklamationList"
+	}
+}, {
+	"Guid": "8a1ea95b-9c0c-4750-95c7-e556b01d8fa4",
+	"Text": "Text 6",
+		"Percent":"10",
+	"StateValue":"Success",
+	"TypeText": "TypeText 6",
+	"__metadata": {
+		"uri": "ReklamationSet(guid'8a1ea95b-9c0c-4750-95c7-e556b01d8fa4')",
+		"type": "ZTNM_CLAIM_V2_SRV.ReklamationList"
+	}
+}, {
+	"Guid": "8de768cc-09fd-4192-8d4a-4caff024461d",
+	"Text": "Text 7",
+		"Percent":10,
+	"StateValue":"Success",
+	"TypeText": "TypeText 7",
+	"__metadata": {
+		"uri": "ReklamationSet(guid'8de768cc-09fd-4192-8d4a-4caff024461d')",
+		"type": "ZTNM_CLAIM_V2_SRV.ReklamationList"
+	}
+}, {
+	"Guid": "0c6b26c7-cd39-4230-9ab9-c53449bbc0e0",
+	"Text": "Text 8",
+		"Percent":"10",
+	"StateValue":"Success",
+	"TypeText": "TypeText 8",
+	"__metadata": {
+		"uri": "ReklamationSet(guid'0c6b26c7-cd39-4230-9ab9-c53449bbc0e0')",
+		"type": "ZTNM_CLAIM_V2_SRV.ReklamationList"
+	}
+}, {
+	"Guid": "b07476b8-5204-427b-a6cf-f6173ce3cc12",
+	"Text": "Text 9",
+		"Percent":"10",
+	"StateValue":"Success",
+	"TypeText": "TypeText 9",
+	"__metadata": {
+		"uri": "ReklamationSet(guid'b07476b8-5204-427b-a6cf-f6173ce3cc12')",
+		"type": "ZTNM_CLAIM_V2_SRV.ReklamationList"
+	}
+}, {
+	"Guid": "bd446603-af39-4a48-a69c-47941496c1e3",
+	"Text": "Text 10",
+		"Percent":"10",
+	"StateValue":"Success",
+	"TypeText": "TypeText 10",
+	"__metadata": {
+		"uri": "ReklamationSet(guid'bd446603-af39-4a48-a69c-47941496c1e3')",
+		"type": "ZTNM_CLAIM_V2_SRV.ReklamationList"
+	}
+}]
