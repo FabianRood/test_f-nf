@@ -11,6 +11,7 @@ sap.ui.define([
 		formatter
 	) {
 		"use strict";
+// Test ob das auch wirklich ankommt
 
 		return BaseController.extend("tns.reclamation.controller.Object", {
 
